@@ -62,7 +62,6 @@ nav a {
 h1, h2, h3, h4 {
     text-decoration: none;
     color: #969292;
-    font-size: 2.5rem;
 }
 
 section {
@@ -162,9 +161,12 @@ section {
 }
 
 /* General skill-box styling */
+.skills{
+    padding: 40px 0;
 
+}
 .skill_row{
-    max-width: 900px;
+    max-width: 700px;
 }
 .skill-box {
     color: rgb(91, 91, 91);
@@ -214,9 +216,7 @@ section {
     font-size: 0.5rem;
     color: #6c757d;
 }
-.skill_p{
-    font-size: 1.1rem;
-}
+
 .skill-github-icon {
     background-color: #f0f0f0;
       padding: 10px;

@@ -1,0 +1,151 @@
+/* Full body CSS */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+p {
+  font-size: 14px; /* Use pixel units */
+}
+
+body {
+  background: radial-gradient(#111111, #0a071a);
+  color: #969292;
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+.navbar {
+  background: linear-gradient(to right, #1e1e1e 70%, #051c5f);
+  padding: 15px;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav a {
+  font-size: large;
+  color: rgb(11, 11, 11);
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.navbar-nav .nav-link.active {
+  color: #969292;
+  padding: 5px 10px;
+  border-bottom: 3px solid #454546;
+  padding-bottom: 3px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+/* Hero Section */
+.hero-section {
+  background: #696868;
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+
+/* Blog Section */
+#blog {
+  padding: 60px 0;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  height: auto; /* Ensure height adapts automatically */
+}
+
+.card-img-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  height: 200px; /* Set a fixed height for the image */
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.card-text {
+  color: #2e2f31;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+.col-md-6 {
+  margin-bottom: 30px; /* Add margin to create spacing */
+}
+
+.card {
+  height: 100%; /* Ensure cards take up full height if needed */
+}
+
+@media (max-width: 768px) {
+  .col-md-6 {
+    flex-basis: 100%; /* Stack the cards on smaller screens */
+    max-width: 100%; /* Full width for smaller screens */
+  }
+
+  .card-img-top {
+    height: 150px; /* Reduce image height on smaller screens */
+  }
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-primary {
+  background-color: #100a8b;
+  border-color: #120c92;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5 10px;
+}
+
+
+.footer {
+  background: linear-gradient(to right, #1e1e1e 70%, #051c5f);
+  color: #fff; /* White text */
+  padding: 15px 0;
+  width: 100%;
+  position:absolute;
+}
+
+.footer-text {
+  margin: 0;
+  font-size: 16px;
+  color: #ddd;
+}

@@ -89,14 +89,5 @@ document.getElementById('contact-form').addEventListener('submit', function(even
 });
 
 
-// JavaScript to dynamically update the year
-function updateYear() {
-    var yearElement = document.getElementById('year');
-    var currentYear = new Date().getFullYear(); // Get the current year
-    yearElement.textContent = currentYear;      // Update the year in the span
-}
-
-// Call the function on page load
-document.addEventListener('DOMContentLoaded', updateYear);
 
                 
