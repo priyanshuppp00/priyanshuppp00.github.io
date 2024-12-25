@@ -73,12 +73,6 @@ section {
     align-items: center;
 }
 
-.profile-img {
-    width: 350px;
-    height: 350px;
-    object-fit: cover;
-}
-
 .rounded-circle {
     border: 5px solid #104e84;
 }
@@ -120,7 +114,7 @@ section {
     padding: 5px;
     text-decoration: none;
     display: inline-block;
-    width: 48%; /* Ensure links are equally wide */
+    width: 50%; /* Ensure links are equally wide */
     text-align: center;
     margin-bottom: 10px; /* Add space between project and GitHub link */
 }
@@ -355,11 +349,6 @@ section {
         text-align: center;
     }
 
-    .profile-img {
-        width: 250px;
-        height: 250px;
-    }
-
     .resume-btn {
         width: 50%;
         margin-bottom: 10px;
@@ -388,10 +377,6 @@ section {
         text-align: center; /* Center the project content */
         width: 100%; /* Ensure project takes full width */
     }
-    .image-link img {
-        height: 200px; /* Set equal height for images on tablet */
-    }
-
     .project-id {
         width: 100%; /* Ensure links take full width */
     }
@@ -453,12 +438,6 @@ section {
         font-size: 1.75rem; /* Further increase font size for smaller screens */
         font-weight: bold;  /* Keep text bold */
     }
-
-    .profile-img {
-        width: 200px;
-        height: 200px;
-    }
-   
     #about h2 {
         font-size: 1.8rem; /* Further reduce heading size for very small screens */
     }
@@ -482,22 +461,30 @@ section {
     }
 
     .project {
-        width: 100%; /* Make sure project takes full width */
+        width: 80%; /* Make sure project takes full width */
         padding: 10px;
-        margin-bottom: 0px;
+        margin: 0 30px 0 30px;
     }
 
     .project-id {
         font-size: 0.9rem; /* Slightly reduce font size for mobile */
         width: 100%; /* Full-width links */
-        margin: 10px 0; /* Vertical spacing between links */
+        margin: 0 30px 0 30px; /* Vertical spacing between links */
     }
 
     .image-link img {
-        height: 150px;
-         /* Reduce image height for mobile */
+         width: 80%;
+         margin: 0 30px 0 30px;
     }
+    .heading{
+        margin: 0 30px 0 30px;
+        font-size: 1rem;
+    }
+    .heading-pra{
+        margin: 5px 30px 5px 30px;
+        
 
+    }
     .skill-box {
         padding: 10px;
     }
