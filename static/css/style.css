@@ -280,7 +280,11 @@ section {
 .contact-main {
     max-width: 80%;
 }
+#contact-form{
+    max-width: 430px;
+    margin-left: 20pxpx;
 
+}
 .custom-input {
     
     border-radius: 7px;
