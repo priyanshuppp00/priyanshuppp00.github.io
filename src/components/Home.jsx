@@ -22,7 +22,7 @@ const Home = () => {
   return (
     <div
       name="home"
-      className="w-full h-full  text-slate-300 bg-[radial-gradient(#111111,#0a071a)] flex items-center justify-center"
+      className="w-full h-full text-slate-300 bg-[radial-gradient(#111111,#0a071a)] flex items-center justify-center"
     >
       <div className="flex flex-col items-center justify-center w-full h-full max-w-screen-xl px-4 sm:px-20 md:flex-row md:space-x-10">
         {/* Text Content Section */}
@@ -79,7 +79,7 @@ const Home = () => {
           <img
             src={HeroImage}
             loading="lazy"
-            className="object-cover transition-all duration-300 border-4 border-blue-300 rounded-full shadow-lg max-w-[90%] sm:max-w-[56] md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px] hover:shadow-blue-500"
+            className="object-cover max-w-xs transition-all duration-300 border-4 border-blue-300 rounded-full shadow-lg sm:max-w-sm md:max-w-md lg:max-w-lg hover:shadow-blue-500"
             alt="Profile"
           />
         </div>
