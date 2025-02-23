@@ -1,22 +1,40 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { SiGmail, SiInstagram } from "react-icons/si";
 import { IoMdCall } from "react-icons/io";
 import { IoPaperPlane } from "react-icons/io5";
+import { useForm } from "@formspree/react";
 
 const Contact = () => {
-  const [submitted, setSubmitted] = useState(false);
+  const [state, handleSubmit] = useForm("mbldejag");
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const [showSuccess, setShowSuccess] = useState(false);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 3000);
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  useEffect(() => {
+    if (state.succeeded) {
+      setFormData({ name: "", email: "", message: "" });
+      setShowSuccess(true);
+
+      const timeout = setTimeout(() => {
+        setShowSuccess(false);
+      }, 2000);
+
+      return () => clearTimeout(timeout);
+    }
+  }, [state.succeeded]);
+
   return (
-    <section
+    <div
       name="contact"
-      className=" w-full h-full text-slate-300 bg-[radial-gradient(#111111,#0a071a)]"
+      className="w-full h-full text-slate-300 bg-[radial-gradient(#111111,#0a071a)]"
     >
       <div className="container max-w-screen-lg p-4 px-6 mx-auto md:px-16">
         <div className="mb-10 text-center">
@@ -24,7 +42,7 @@ const Contact = () => {
           <p className="mt-3 text-gray-400">
             Feel free to reach out via the form below!
           </p>
-          {submitted && (
+          {showSuccess && (
             <div className="mt-4 font-semibold text-green-400">
               ✅ Your message has been sent successfully!
             </div>
@@ -33,15 +51,12 @@ const Contact = () => {
 
         <div className="grid gap-10 md:grid-cols-2">
           <div className="p-6">
-            <form
-              action="https://getform.io/f/azylxorb"
-              method="POST"
-              onSubmit={handleSubmit}
-              className="space-y-4"
-            >
+            <form onSubmit={handleSubmit} className="space-y-4">
               <input
                 type="text"
                 name="name"
+                value={formData.name}
+                onChange={handleChange}
                 placeholder="Your Name"
                 className="w-full p-3 text-white bg-gray-800 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                 required
@@ -49,12 +64,16 @@ const Contact = () => {
               <input
                 type="email"
                 name="email"
+                value={formData.email}
+                onChange={handleChange}
                 placeholder="Your Email"
                 className="w-full p-3 bg-gray-800 border border-gray-600 rounded-md text-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 required
               />
               <textarea
                 name="message"
+                value={formData.message}
+                onChange={handleChange}
                 placeholder="Your Message"
                 rows="5"
                 className="w-full p-3 bg-gray-800 border border-gray-600 rounded-md text-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -62,6 +81,7 @@ const Contact = () => {
               ></textarea>
               <button
                 type="submit"
+                disabled={state.submitting}
                 className="flex items-center justify-center w-full py-2 space-x-2 transition-transform duration-300 rounded-md cursor-pointer text-slate-300 bg-gradient-to-r from-slate-600 to-blue-800 hover:scale-105"
               >
                 <span>Send Message</span>
@@ -126,7 +146,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

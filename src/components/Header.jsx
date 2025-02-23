@@ -33,7 +33,6 @@ const Header = () => {
         </h1>
       </div>
 
-      {/* Desktop Navbar */}
       <ul className="hidden md:flex">
         {links.map(({ id, link }) => (
           <li
@@ -64,7 +63,6 @@ const Header = () => {
         </a>
       </ul>
 
-      {/* Mobile Menu Toggle */}
       <div
         onClick={() => setNav(!nav)}
         className="z-10 pr-4 cursor-pointer md:hidden"
@@ -73,7 +71,6 @@ const Header = () => {
         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
 
-      {/* Mobile Menu */}
       <div
         className={`fixed top-20 left-0 w-full bg-[linear-gradient(to_right,#1e1e1e_70%,#051c5f)] transition-transform duration-300 ease-in-out ${
           nav ? "translate-x-0" : "-translate-x-full"

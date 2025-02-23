@@ -1,15 +1,15 @@
 import { useEffect, useState } from "react";
-import { Github as GithubIcon } from "lucide-react"; // GitHub Icon
-import GitHubCalendar from "react-github-calendar"; // GitHub Calendar
+import { Github as GithubIcon } from "lucide-react";
+import GitHubCalendar from "react-github-calendar";
 
 const Github = () => {
-  const username = "priyanshuppp00"; // Replace with your GitHub username
+  const username = "priyanshuppp00";
   const [repos, setRepos] = useState([]);
 
   useEffect(() => {
     fetch(`https://api.github.com/users/${username}/repos`)
       .then((response) => response.json())
-      .then((data) => setRepos(data.slice(0, 5))) // Show only 5 repos
+      .then((data) => setRepos(data.slice(0, 5)))
       .catch((error) => console.error("Error fetching repos:", error));
   }, []);
 
@@ -35,7 +35,6 @@ const Github = () => {
           <GithubIcon className="w-5 h-5" /> Visit My GitHub
         </a>
 
-        {/* GitHub Contributions */}
         <div className="flex justify-center mt-8">
           <div className="w-full max-w-md p-4 transition-transform duration-300 bg-gray-900 rounded-lg shadow-lg hover:scale-105 hover:shadow-green-500 sm:p-6 sm:max-w-lg md:max-w-xl">
             <h3 className="mb-4 text-xl font-semibold">GitHub Contributions</h3>
@@ -54,7 +53,6 @@ const Github = () => {
           </div>
         </div>
 
-        {/* GitHub Stats */}
         <div className="flex flex-col items-center justify-center w-full gap-6 py-4 mt-10">
           <div className="w-full max-w-md mx-auto sm:max-w-lg md:max-w-xl">
             <img
@@ -75,7 +73,6 @@ const Github = () => {
           </div>
         </div>
 
-        {/* Recent Repositories */}
         <div className="mt-10">
           <h3 className="mb-4 text-xl font-semibold">Recent Repositories</h3>
           <div className="px-2 space-y-3 sm:px-4">

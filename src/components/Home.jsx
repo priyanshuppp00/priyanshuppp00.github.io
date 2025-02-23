@@ -25,7 +25,6 @@ const Home = () => {
       className="w-full h-full text-slate-300 bg-[radial-gradient(#111111,#0a071a)] flex items-center justify-center"
     >
       <div className="flex flex-col items-center justify-center w-full h-full max-w-screen-xl px-4 sm:px-20 md:flex-row md:space-x-10">
-        {/* Text Content Section */}
         <div className="flex flex-col justify-center h-full mt-40 md:mt-40">
           <h2 className="text-3xl font-bold sm:text-4xl md:text-5xl">
             Hello, I am Priyanshu Kumar
@@ -74,7 +73,6 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Image Section */}
         <div className="flex justify-center w-full mt-10 md:w-1/2 md:mt-28">
           <img
             src={HeroImage}
