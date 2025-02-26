@@ -61,11 +61,11 @@ const Projects = () => {
           <p className="text-4xl font-bold">Projects</p>
           <p className="py-6">These are some beautiful projects that I made</p>
         </div>
-        <div className="grid sm:grid-cols-1 md:grid-cols-1 md:w-3/3 gap-8 px-12 sm:px-0">
+        <div className="grid sm:grid-cols-1 md:grid-cols-1 md:w-3/3 gap-8 px-12 sm:px-5">
           {projects.map((project, id) => (
             <div
               key={id}
-              className={`flex flex-col sm:flex-row max-w-screen-lg `} // ${project.color}
+              className={`flex flex-col sm:flex-row max-w-screen-lg`} // ${project.color}
             >
               <div className="text-gray-300 rounded-lg bg-gradient-to-r from-slate-600 to-blue-800 md:w-2/3">
                 <div className="flex items-center justify-center">
@@ -94,7 +94,7 @@ const Projects = () => {
                 className="flex flex-col justify-center  from-gray-900 to-gray-800 border-1 border-gray-700 rounded-lg shadow-xl h-full sm:w-full md:w-2/3 pl-8 pb-4      
               "
               >
-                <h1 className="text-3xl font-bold mt-4 md:mt-0 ">
+                <h1 className="text-2xl font-bold mt-4 md:mt-0 ">
                   {project.name}
                 </h1>
                 <p className="font-light">{project.description}</p>
