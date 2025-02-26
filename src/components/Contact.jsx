@@ -31,6 +31,44 @@ const Contact = () => {
     }
   }, [state.succeeded]);
 
+  const socialLinks = [
+    {
+      id: 1,
+      href: "https://www.linkedin.com/in/priyanshu-kumar-849a8a263",
+      icon: <AiFillLinkedin />,
+      text: "LinkedIn",
+      color: "text-blue-700",
+    },
+    {
+      id: 2,
+      href: "https://github.com/priyanshuppp00",
+      icon: <AiFillGithub />,
+      text: "GitHub",
+      color: "text-gray-800",
+    },
+    {
+      id: 3,
+      href: "mailto:priynanshugangwar00@gmail.com",
+      icon: <SiGmail />,
+      text: "Mail",
+      color: "text-red-600",
+    },
+    {
+      id: 4,
+      href: "https://www.instagram.com/priyanshuppp/",
+      icon: <SiInstagram />,
+      text: "Instagram",
+      color: "text-pink-600",
+    },
+    {
+      id: 5,
+      href: "tel:+919720153058",
+      icon: <IoMdCall />,
+      text: "+91 9720153058",
+      color: "text-green-600",
+    },
+  ];
+
   return (
     <div
       name="contact"
@@ -95,40 +133,9 @@ const Contact = () => {
               Get in Touch
             </h4>
             <div className="flex flex-col space-y-4">
-              {[
-                {
-                  href: "https://www.linkedin.com/in/priyanshu-kumar-849a8a263",
-                  icon: <AiFillLinkedin />,
-                  text: "LinkedIn",
-                  color: "text-blue-600",
-                },
-                {
-                  href: "https://github.com/priyanshuppp00",
-                  icon: <AiFillGithub />,
-                  text: "GitHub",
-                  color: "text-gray-400",
-                },
-                {
-                  href: "mailto:priynanshugangwar00@gmail.com",
-                  icon: <SiGmail />,
-                  text: "Mail",
-                  color: "text-red-500",
-                },
-                {
-                  href: "https://www.instagram.com/priyanshuppp/",
-                  icon: <SiInstagram />,
-                  text: "Instagram",
-                  color: "text-pink-500",
-                },
-                {
-                  href: "tel:+919720153058",
-                  icon: <IoMdCall />,
-                  text: "+91 9720153058",
-                  color: "text-green-500",
-                },
-              ].map((item, index) => (
+              {socialLinks.map((item, id) => (
                 <a
-                  key={index}
+                  key={id}
                   href={item.href}
                   target="_blank"
                   rel="noopener noreferrer"

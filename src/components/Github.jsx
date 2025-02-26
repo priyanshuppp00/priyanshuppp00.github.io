@@ -30,7 +30,7 @@ const Github = () => {
           href={`https://github.com/${username}`}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-center gap-2 px-4 py-2 mx-auto font-semibold text-gray-300 transition-transform duration-300 rounded-md cursor-pointer group bg-gradient-to-r from-slate-600 to-blue-800 hover:scale-105 hover:shadow-lg hover:shadow-blue-500 w-fit"
+          className="flex items-center justify-center gap-2 px-4 py-2 mx-auto font-semibold text-gray-300 transition-transform duration-300 rounded-md cursor-pointer group bg-gradient-to-r from-slate-600 to-blue-800 hover:scale-105 hover:shadow-md hover:shadow-cyan-500 w-fit"
         >
           <GithubIcon className="w-5 h-5" /> Visit My GitHub
         </a>
@@ -58,7 +58,7 @@ const Github = () => {
             <img
               src={`https://github-readme-streak-stats.herokuapp.com?user=${username}&theme=nightowl&hide_border=true&border_radius=0&date_format=M%20j%5B%2C%20Y%5D`}
               alt="GitHub Streak Stats"
-              className="w-full transition-transform duration-300 rounded-lg shadow-lg hover:scale-110 hover:shadow-purple-500"
+              className="w-full transition-transform duration-300 rounded-lg shadow-lg hover:scale-110 hover:shadow-gray-800"
               loading="lazy"
             />
           </div>
