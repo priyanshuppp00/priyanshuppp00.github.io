@@ -29,14 +29,13 @@ const Home = () => {
           <h2 className="text-3xl font-bold sm:text-4xl md:text-5xl">
             Hello, I am Priyanshu Kumar
           </h2>
-          <h2 className="mt-2 text-xl font-bold text-slate-100 sm:text-xl md:text-2xl">
+          <h2 className="mt-2 text-xl text-slate-100 sm:text-xl md:text-2xl">
             A passionate developer creating web solutions.
           </h2>
-          <p className="max-w-md py-4 text-base leading-relaxed sm:text-lg">
-            I'm a highly passionate and self-motivated developer, driven to
-            craft creative and impactful web solutions. I take pride in being a
-            quick learner, a team player, and someone who thrives on solving
-            challenges with innovation.
+          <p className="max-w-md py-4 text-base font-light leading-relaxed sm:text-lg">
+            I am a quick learner, a team player, and enjoy solving problems with
+            new ideas. I always strive to improve and build impactful digital
+            experiences.
           </p>
 
           <div className="flex flex-wrap items-center justify-center w-full gap-4 pt-4 md:justify-start">

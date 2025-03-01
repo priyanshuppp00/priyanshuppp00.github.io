@@ -41,13 +41,10 @@ const Github = () => {
             <div className="transition-opacity duration-300 hover:opacity-90">
               <GitHubCalendar
                 username={username}
-                colorScheme="dark"
+                colorScheme="light"
                 blockSize={10}
                 blockMargin={4}
                 fontSize={12}
-                theme={{
-                  dark: ["#161B22", "#0E4429", "#006D32", "#26A641", "#39D353"],
-                }}
               />
             </div>
           </div>
