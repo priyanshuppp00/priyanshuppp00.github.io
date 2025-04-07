@@ -76,8 +76,8 @@ const Home = () => {
           <img
             src={HeroImage}
             loading="lazy"
-            className="object-cover max-w-xs transition-all duration-300 border-4 border-blue-300 rounded-full shadow-lg sm:max-w-sm md:max-w-md lg:max-w-lg hover:shadow-blue-500"
             alt="Profile"
+            className="object-cover w-72 h-72 sm:w-72 sm:h-72 md:w-96 md:h-96 lg:w-[400px] lg:h-[400px] border-4 border-blue-400 shadow-md hover:shadow-blue-500 transition-all duration-300 hover:scale-105"
           />
         </div>
       </div>
