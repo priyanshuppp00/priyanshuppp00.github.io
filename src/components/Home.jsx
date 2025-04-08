@@ -14,7 +14,7 @@ const openWebsite = () => {
 
 const newtab = () => {
   window.open(
-    "https://drive.google.com/file/d/12LWM0tVNi7Di3PRKH_T0lwVYsdP0BKCn/view?usp=sharing"
+    "https://drive.google.com/file/d/1NxEkpzNBva6xkDI6DdZjw5zSra_rcE4M/view?usp=sharing"
   );
 };
 
@@ -39,7 +39,7 @@ const Home = () => {
           </p>
 
           <div className="flex flex-wrap items-center justify-center w-full gap-4 pt-4 md:justify-start">
-            <a href="/Priyanshu_Kumar_Resume.pdf" download={true}>
+            <a href="/Priyanshu_Kumar_Gangwar.pdf" download={true}>
               <button
                 onClick={newtab}
                 type="button"

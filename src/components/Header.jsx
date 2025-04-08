@@ -21,7 +21,7 @@ const Header = () => {
 
   const newtab = () => {
     window.open(
-      "https://drive.google.com/file/d/12LWM0tVNi7Di3PRKH_T0lwVYsdP0BKCn/view?usp=sharing"
+      "https://drive.google.com/file/d/1NxEkpzNBva6xkDI6DdZjw5zSra_rcE4M/view?usp=sharing"
     );
   };
 
@@ -53,7 +53,7 @@ const Header = () => {
           </li>
         ))}
 
-        <a href="/Priyanshu_Kumar_Resume.pdf" download={true}>
+        <a href="/Priyanshu_Kumar_Gangwar.pdf" download={true}>
           <button
             onClick={() => newtab()}
             className="px-4 font-medium capitalize duration-200 cursor-pointer hover:scale-105"
