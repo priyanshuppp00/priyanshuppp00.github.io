@@ -2,6 +2,7 @@ import React from "react";
 import Cashify from "../assets/cashify.png";
 import Movies from "../assets/movies.png";
 import ems from "../assets/ems.png";
+import job from "../assets/job.png";
 
 const projects = [
   {
@@ -44,6 +45,29 @@ const projects = [
     techStack: ["React", "Tailwind CSS", "HTML"],
     liveLink: "https://ems-kitchin.vercel.app/",
     githubLink: "https://github.com/priyanshuppp00/ems-kitchin",
+    color: "border-gray-700 ",
+  },
+  {
+    id: 4,
+    name: "Job-Board",
+    image: job,
+    description:
+      "A full-stack Job Board web app where employers post jobs and seekers apply. Built with React, Tailwind CSS, Node.js, and MongoDB.",
+    features: [
+      "User login/signup,Post and manage jobs, Apply for jobs,Mobile responsive design",
+    ],
+    techStack: [
+      "React",
+      "Tailwind CSS",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+    ],
+    liveLink: "https://job-board-frontend-iota.vercel.app/",
+    githubLink: "https://github.com/priyanshuppp00/job-board",
     color: "border-gray-700 ",
   },
 ];
