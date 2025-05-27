@@ -8,11 +8,8 @@ import gitHubLogo from "../assets/gitHubLogo.png";
 import tailwindLogo from "../assets/tailwindLogo.png";
 import mongooseLogo from "../assets/mongoose.png";
 import mongoLogo from "../assets/mongo.png";
-import mysqlLogo from "../assets/mysqlLogo.png";
 import bootstrapLogo from "../assets/bootstrapLogo.png";
-import djangologo from "../assets/djangologo.png";
-import pythonlogo from "../assets/pythonlogo.png";
-import phplogo from "../assets/phplogo.png";
+import Node from "../assets/Node.png";
 
 const Skills = () => {
   const skills = [
@@ -79,42 +76,50 @@ const Skills = () => {
     //   style: "shadow-blue-500",
     //   border: "border-blue-500",
     // },
+
     {
-      id: 10,
-      src: bootstrapLogo,
-      title: "Bootstrap",
-      style: "shadow-purple-500",
-      border: "border-purple-500",
-    },
-    {
-      id: 11,
+      id: 6,
       src: tailwindLogo,
       title: "Tailwind CSS",
       style: "shadow-sky-500",
       border: "border-sky-500",
     },
     {
-      id: 12,
+      id: 7,
+      src: bootstrapLogo,
+      title: "Bootstrap",
+      style: "shadow-purple-500",
+      border: "border-purple-500",
+    },
+    {
+      id: 8,
       src: gitHubLogo,
       title: "GitHub",
       style: "shadow-gray-500",
       border: "border-gray-500",
       imgStyle: "rounded-full",
     },
-    // {
-    //   id: 13,
-    //   src: mongoLogo,
-    //   title: "MongoDB",
-    //   style: "shadow-green-500",
-    //   border: "border-green-500",
-    // },
-    // {
-    //   id: 14,
-    //   src: mongooseLogo,
-    //   title: "Mongoose",
-    //   style: "shadow-red-500",
-    //   border: "border-red-500",
-    // },
+    {
+      id: 9,
+      src: mongoLogo,
+      title: "MongoDB",
+      style: "shadow-green-500",
+      border: "border-green-500",
+    },
+    {
+      id: 10,
+      src: mongooseLogo,
+      title: "Mongoose",
+      style: "shadow-red-500",
+      border: "border-red-500",
+    },
+    {
+      id: 10,
+      src: Node,
+      title: "Node JS",
+      style: "shadow-green-500",
+      border: "border-green-500",
+    },
   ];
 
   return (

@@ -56,16 +56,7 @@ const projects = [
     features: [
       "User login/signup,Post and manage jobs, Apply for jobs,Mobile responsive design",
     ],
-    techStack: [
-      "React",
-      "Tailwind CSS",
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-    ],
+    techStack: ["React", "Tailwind CSS", "Node.js", "Express.js", "MongoDB"],
     liveLink: "https://job-board-frontend-iota.vercel.app/",
     githubLink: "https://github.com/priyanshuppp00/job-board",
     color: "border-gray-700 ",
