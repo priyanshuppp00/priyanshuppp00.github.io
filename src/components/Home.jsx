@@ -27,7 +27,7 @@ const Home = () => {
       <div className="flex flex-col items-center justify-center w-full h-full max-w-screen-xl px-4 sm:px-20 md:flex-row md:space-x-10">
         <div className="flex flex-col justify-center h-full mt-40 md:mt-40">
           <h2 className="text-3xl font-bold sm:text-4xl md:text-5xl">
-            Hello, I am Priyanshu Kumar
+            Hello, I am Priyanshu Kumar Gangwar
           </h2>
           <h2 className="mt-2 text-xl text-slate-100 sm:text-xl md:text-2xl">
             A passionate developer creating web solutions.
