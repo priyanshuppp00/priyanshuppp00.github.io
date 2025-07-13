@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
-import HeroImage from "../assets/heroimage.jpg";
+import HeroImage from "../assets/heroimage.png";
 import { ImArrowRight2 } from "react-icons/im";
 import { FaEnvelope, FaGlobe } from "react-icons/fa";
 
@@ -72,12 +72,12 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="flex justify-center w-full mt-10 md:w-1/2 md:mt-28">
+        <div className="flex justify-center w-full mt-10 md:w-1/2 md:mt-28 lg:mt-32">
           <img
             src={HeroImage}
             loading="lazy"
             alt="Profile"
-            className=" w-72 h-72 sm:w-72 sm:h-72 md:w-96 md:h-96 lg:w-[400px] lg:h-[400px] border-4 border-blue-400 shadow-md hover:shadow-blue-500 transition-all duration-300 hover:scale-105"
+            className="rounded-full aspect-square w-60 sm:w-72 md:w-80 lg:w-96 border-4 border-blue-400 shadow-md hover:shadow-blue-500 transition-all duration-300 hover:scale-105 object-cover"
           />
         </div>
       </div>
