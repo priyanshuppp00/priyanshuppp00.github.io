@@ -14,7 +14,7 @@ const openWebsite = () => {
 
 const newtab = () => {
   window.open(
-    "https://drive.google.com/file/d/1c62QHXGS8pch35hWc0FP-Zu5NAR3LY7h/view?usp=drive_link"
+    "https://drive.google.com/file/d/1bqVrlHG8eERUvyYrWy9ZtbLKcJ-FeRpV/view?usp=drive_link"
   );
 };
 
